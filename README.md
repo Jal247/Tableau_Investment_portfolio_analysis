@@ -12,7 +12,6 @@ A leading investment bank needed to enhance its portfolio performance tracking a
 - 	Fragmented data from multiple sources (transaction records, CRM, external market data).
 - 	Manual reporting inefficiencies, leading to delays in decision-making.
 - 	Lack of interactive dashboards, making it hard for senior leaders to extract actionable insights.
-- 	Data governance gaps, affecting accuracy, compliance, and reporting.
 
 The goal was to develop an automated BI solution with real-time insights, predictive analytics, and enhanced visualization for senior executives and financial advisors.
 ________________________________________
@@ -44,7 +43,7 @@ C. Predictive Analytics & Insights
 
 D. Data Governance & Compliance
 
--	Established data governance best practices, ensuring data quality, regulatory compliance (Dodd-Frank Act), and security.
+-	Established data governance best practices, ensuring data quality, regulatory compliance, and security.
 -	Worked with stakeholders to implement role-based access controls using Azure Active Directory (AAD).
 
 E. Stakeholder Collaboration & Business Impact
@@ -58,7 +57,6 @@ ________________________________________
 * Reduced decision-making time by 25% through interactive and real-time dashboards.
 * Improved data accuracy by 30% with governance frameworks and automated ETL processes.
 * Enhanced customer segmentation models, leading to 18% higher engagement in investment products.
-* Enabled $10M+ in potential revenue growth by identifying high-return investment opportunities.
 * Optimized reporting efficiency, reducing manual effort by 40%.
 ________________________________________
 4. Tools & Technologies Used
@@ -66,7 +64,7 @@ ________________________________________
 -	BI & Visualization: Tableau (LOD, action filters, storytelling)
 -	Data Engineering: SQL, Azure Data Factory, Databricks
 -	Predictive Analytics: Python (Pandas, NumPy, Matplotlib, scikit-learn)
--	ETL & Data Governance: Data validation, compliance frameworks (Dodd-Frank Act)
+-	ETL & Data Governance: Data validation, compliance frameworks
 -	Cloud Technologies: Azure Data Lake, Azure Active Directory (AAD)
 ________________________________________
 
@@ -74,7 +72,7 @@ Use Case Application
 
 - Azure, Python, SQL: 	Built predictive models (Python), optimized SQL queries, and used cloud data tools.
 - Tableau & BI Development: 	Designed advanced Tableau dashboards with LOD expressions, action filters, and KPI tracking.
-- Data Governance & Compliance:	Implemented data validation processes and ensured regulatory compliance (Dodd-Frank Act).
+- Data Governance & Compliance:	Implemented data validation processes and ensured regulatory compliance.
 - Stakeholder Collaboration:	Worked with data engineers, analysts, and senior leadership to define KPIs and business goals.
 - Predictive Modeling & A/B Testing:	Used Python for forecasting investment trends and implemented A/B testing to refine financial strategies.
 ________________________________________
