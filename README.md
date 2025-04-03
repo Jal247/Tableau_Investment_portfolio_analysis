@@ -17,7 +17,7 @@ The goal was to develop an automated BI solution with real-time insights, predic
 ________________________________________
 2. Solution Approach
    
-As a Business Data Analyst, I led the initiative to:
+As a Business System Analyst, I led the initiative to:
 
 A. Data Collection & Integration
 
@@ -66,13 +66,14 @@ ________________________________________
 -	Predictive Analytics: Python (Pandas, NumPy, Matplotlib, scikit-learn)
 -	ETL & Data Governance: Data validation, compliance frameworks
 -	Cloud Technologies: Azure Data Lake, Azure Active Directory (AAD)
+-	JIRA & Confluence: For System documentation such as BRD, FSD, Data flow diagram, data lineage and data mapping document, System Workflow Diagram, ETL Specification Document, Data Validation and Testing Plan, User Acceptance Testing (UAT) Plan, Dashboard User Guide, Meeting Notes & Action Items, Compliance & Data Governance Report	 
 ________________________________________
 
 Use Case Application
 
 - Azure, Python, SQL: 	Built predictive models (Python), optimized SQL queries, and used cloud data tools.
 - Tableau & BI Development: 	Designed advanced Tableau dashboards with LOD expressions, action filters, and KPI tracking.
-- Data Governance & Compliance:	Implemented data validation processes and ensured regulatory compliance.
+- Data Governance & Compliance:	Implemented data validation processes and ensured regulatory compliance, data integration, accuracy and security.
 - Stakeholder Collaboration:	Worked with data engineers, analysts, and senior leadership to define KPIs and business goals.
 - Predictive Modeling & A/B Testing:	Used Python for forecasting investment trends and implemented A/B testing to refine financial strategies.
 ________________________________________
