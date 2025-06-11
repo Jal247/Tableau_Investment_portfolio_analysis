@@ -213,7 +213,63 @@ Field	Description
 
 ![UAT test cases](https://github.com/user-attachments/assets/a499d7ff-e79e-4b6f-97be-cda6c63b7056)
 
+| Skill Area          | Contribution to Cloud Migration Project                                            |
+| ------------------- | ---------------------------------------------------------------------------------- |
+| Data Mapping        | Ensures accuracy between legacy and cloud data models                              |
+| Data Profiling      | Identifies issues and anomalies before migration                                   |
+| Data Classification | Secures sensitive data, enables compliance                                         |
+| Data Treatment      | Standardizes and cleans data for quality assurance                                 |
+| SQL                 | Validates, reconciles, and transforms structured data                              |
+| Python (PySpark)    | Executes large-scale transformations, profiling, and treatment tasks in Databricks |
+| Azure Databricks    | Central engine for big data ETL, model development, and data wrangling             |
 
+
+**Responsibility Assignment Matrix (RACI)** showing “who does what” for each of the key activities mentioned:
+
+✅ R = Responsible (does the work)
+✅ A = Accountable (owns the outcome)
+✅ C = Consulted (provides input)
+✅ I = Informed (kept up to date)
+
+
+| Task/Activity                                   | Data Engineer | Data Analyst | Data Steward | Data Architect | **Business System Analyst** | Data Owner | Compliance Officer |
+| ----------------------------------------------- | ------------- | ------------ | ------------ | -------------- | --------------------------- | ---------- | ------------------ |
+| **1. Data Mapping Across Platforms**            | R             | C            | C            | A              | **R/C**                     | C          | I                  |
+| **2. Data Profiling**                           | R             | C            | A            | I              | **C**                       | I          | I                  |
+| **3. Data Classification**                      | C             | I            | R            | C              | **C**                       | A          | C                  |
+| **4. Data Treatment (Cleaning/Standardizing)**  | R             | C            | A            | I              | **C**                       | I          | C                  |
+| **5. SQL Data Extraction/Validation**           | R             | C            | C            | A              | **C**                       | I          | I                  |
+| **6. Python/Databricks ETL Workflows**          | R             | I            | C            | A              | I                           | I          | I                  |
+| **7. Build Curated Datasets**                   | R             | C            | A            | A              | **C**                       | I          | I                  |
+| **8. Build Analytics Layer**                    | R             | A            | C            | C              | **C**                       | I          | I                  |
+| **9. Access Control & Classification Policies** | I             | I            | C            | C              | **C**                       | A          | R                  |
+| **10. Compliance Reporting**                    | I             | I            | C            | I              | **C**                       | A          | R                  |
+
+
+**🎯 Key Responsibilities of BSA in Cloud Migration**
+
+| Phase                         | BSA Responsibilities                                                           |
+| ----------------------------- | ------------------------------------------------------------------------------ |
+| **Requirement Gathering**     | Gather business needs for analytics, compliance, and operational reporting.    |
+| **Data Mapping**              | Assist in mapping business terms to data elements across legacy and cloud.     |
+| **Gap Analysis**              | Identify missing data or misaligned fields in the new system.                  |
+| **Source-to-Target Specs**    | Collaborate on STTM docs, providing business rules and validations.            |
+| **Validation**                | Help define and execute test cases/UAT based on business scenarios.            |
+| **Stakeholder Communication** | Communicate progress, changes, and risks between technical teams and business. |
+| **Change Management**         | Help ensure users are trained and changes are accepted post-migration.         |
+
+
+**Summary**
+
+| Area                            | BSA Role    |
+| ------------------------------- | ----------- |
+| Business Requirements           | Lead        |
+| Data Mapping & Functional Specs | Collaborate |
+| Data Quality/Validation Rules   | Advise      |
+| UAT/Test Cases                  | Lead        |
+| Reporting KPIs Definition       | Lead        |
+| Metadata/Glossary Contribution  | Contribute  |
+| Compliance Interpretation       | Support     |
 
 
 
