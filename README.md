@@ -17,56 +17,147 @@ The goal was to develop an automated BI solution with real-time insights, predic
 ________________________________________
 2. Solution Approach
    
-As a Business System Analyst, I led the initiative to:
+As a Business System Analyst,  my role in a nutshell:
+"Bridge the gap between business requirements and technical data solutions to deliver insightful and secure dashboards."
 
-A. Data Collection & Integration
+🔍 PHASE 1: Requirement Gathering (Business Analysis)
 
--	Collaborated with data engineers to integrate data from Azure Data Lake, Databricks, and CRM systems.
--	Conducted data profiling and cleansing to ensure accuracy and consistency.
--	Optimized SQL queries to enhance data extraction and performance.
+✅ What to Perform:
+- Understand why the dashboard is needed (business value).
+- Identify KPIs, metrics, and visualization preferences.
+- Document user personas: Portfolio Managers, Clients, Executives.
 
-B. Dashboard Development & Data Visualization
 
-•	Designed interactive dashboards in Tableau with:
+🎯 Project Deliverables:
+- Business Requirement Document (BRD) or user stories
+- Function Requirement document (FRD)
+- Software Requirement document (SRD)
+- List of KPIs (e.g., ROI, AUM, Portfolio Risk Score)
+- Wireframes/mockups (optional but highly effective)
 
-    - Level of Detail (LOD) expressions for dynamic aggregations.
-    - Action filters & user filters for personalized insights.
-    - Advanced KPIs like ROI, risk-adjusted returns, and customer segmentation.
-    
-•	Enabled visual storytelling by transforming complex datasets into easy-to-understand insights.
+💡 Detail Level:
+- specific. E.g., “Display ROI (%) by portfolio on a line chart with quarterly breakdown for last 2 years.”
+- edge cases: “How to show data if risk score is missing?”
 
-C. Predictive Analytics & Insights
 
-- 	Developed Python-based predictive models to forecast investment trends and portfolio risks.
-- 	Implemented A/B testing frameworks to evaluate the impact of financial strategies.
-- 	Analyzed market trends and customer behavior to refine investment strategies.
 
-D. Data Governance & Compliance
+📊 PHASE 2: Data Analysis and Source Mapping (Data Analyst Work)
 
--	Established data governance best practices, ensuring data quality, regulatory compliance, and security.
--	Worked with stakeholders to implement role-based access controls using Azure Active Directory (AAD).
+✅ What to Perform:
+- Identify source systems (e.g., CRM, Investment DB, Excel files).
+- Understand data structure, relationships, quality issues.
+- Perform data profiling and exploratory analysis.
 
-E. Stakeholder Collaboration & Business Impact
+🎯 Deliverables:
+- Data Mapping Document (DMD): source → target mapping
+- Sample SQL queries for key fields
+- Data profiling report (nulls, duplicates, formats, value ranges)
 
--	Conducted workshops with business leaders, data scientists, and financial analysts to define KPIs.
--	Presented data-driven recommendations to senior executives, influencing investment decisions.
--	Trained non-technical users on interpreting dashboards and data insights.
-________________________________________
-3. Key Achievements & Business Impact
-   
-* Reduced decision-making time by 25% through interactive and real-time dashboards.
-* Improved data accuracy by 30% with governance frameworks and automated ETL processes.
-* Enhanced customer segmentation models, leading to 18% higher engagement in investment products.
-* Optimized reporting efficiency, reducing manual effort by 40%.
-________________________________________
-4. Tools & Technologies Used
-   
--	BI & Visualization: Tableau (LOD, action filters, storytelling)
--	Data Engineering: SQL, Azure Data Factory, Databricks
--	Predictive Analytics: Python (Pandas, NumPy, Matplotlib, scikit-learn)
--	ETL & Data Governance: Data validation, compliance frameworks
--	Cloud Technologies: Azure Data Lake, Azure Active Directory (AAD)
--	JIRA & Confluence: For System documentation such as BRD, FSD, Data flow diagram, data lineage and data mapping document, System Workflow Diagram, ETL Specification Document, Data Validation and Testing Plan, User Acceptance Testing (UAT) Plan, Dashboard User Guide, Meeting Notes & Action Items, Compliance & Data Governance Report	 
+
+💡 Detail Level:
+- Column-level mapping with descriptions
+- Sample data rows, especially for date fields and KPIs
+- Flags for issues (e.g., “Client_ID has 12% missing values”)
+
+
+🧪 PHASE 3: Data Validation and ETL Design
+
+✅ What to Perform:
+
+- Work with data engineers to design ETL logic.
+- Validate that transformed data supports KPIs.
+- Suggest data cleansing, filtering, and feature engineering.
+
+
+🎯 Deliverables:
+- ETL logic flow or rules (can be in flowchart or table format)
+- Test cases for transformed fields (e.g., derived ROI)
+- Validation report (source vs. transformed data checks)
+
+💡 Detail Level:
+- Show how “Portfolio Value Change %” is calculated.
+- Define transformation logic for time-based aggregations (e.g., YTD, MTD).
+
+
+📈 PHASE 4: Dashboard Design Collaboration
+
+✅ What to Perform:
+- develop dashboard, hands-on with Power BI/Tableau.
+- Ensure visuals match user needs.
+- Implement filters, hierarchies, drilldowns.
+
+🎯 Deliverables:
+- Annotated mockups or live dashboards(MVP) demo
+- Dashboard specification guide (what each chart shows)
+- RLS (Row-Level Security) matrix
+
+💡 Detail Level:
+- Specify axis, legends, default filters, tooltip behavior
+- performance constraints (e.g., load time < 5 sec)
+
+
+🔐 PHASE 5: Security & Testing
+
+✅ What to Perform:
+
+- Define access roles and security rules.
+- Write UAT test cases.
+- Ensure compliance with data governance and security rules.
+
+🎯 Deliverables:
+- RLS definitions
+- User Acceptance Testing (UAT) script
+- Test results log
+
+💡 Detail Level:
+- Role-based access table: “Portfolio Manager A → Region: Canada only”
+- Document how encryption and masking are handled if needed
+
+
+🚀 PHASE 6: Deployment and Post-Go-Live Monitoring
+
+✅ What to Perform:
+
+- Help with dashboard publishing and access control.
+- Collect user feedback.
+- Set up refresh schedules and monitor failures.
+
+🎯 Deliverables:
+- Release notes
+- Change log
+- Dashboard usage report (Power BI Admin Center, etc.)
+
+💡 Detail Level:
+
+- Specify refresh cadence: “daily at 6 a.m.”
+- Track performance KPIs: “95% of reports load in <5 seconds”
+
+
+
+🧾 Summary Table – Tasks as DA/BSA
+
+| Phase                    | Task                               | Output                      | Detail Level                            |
+| ------------------------ | ---------------------------------- | --------------------------- | --------------------------------------- |
+| 1. Requirement Gathering | Understand KPIs, goals, users      | BRD, mockups                | Specific metrics, filters, visual types |
+| 2. Data Analysis         | Explore source data, relationships | DMD, SQL queries            | Column-level detail, data issues        |
+| 3. Data Validation       | Design ETL logic, verify data      | ETL rules, test cases       | Transformation formulas, sample data    |
+| 4. Visual Design         | Help build dashboard               | Visual spec doc             | Tooltip, filters, RLS setup             |
+| 5. Testing & Security    | UAT, security setup                | RLS matrix, test logs       | Role definitions, access rules          |
+| 6. Deployment            | Launch & monitor                   | Release notes, usage report | Refresh schedule, performance tracking  |
+
+
+🔧 Tools Used
+
+| Task               | Tools                               |
+| ------------------ | ----------------------------------- |
+| BRD/FRD/Wireframes | Excel, Confluence, Lucidchart, Miro |
+| Data Analysis      | SQL, Python (pandas), Excel         |
+| Data Mapping       | Excel, ERD tools, Visio             |
+| Dashboard          | Power BI, Tableau                   |
+| Documentation      | Confluence, Word                    |
+| Testing            | JIRA, TestRail, Excel               |
+
+
 ________________________________________
 
 Use Case Application
